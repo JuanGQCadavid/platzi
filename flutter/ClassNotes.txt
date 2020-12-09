@@ -1,0 +1,46 @@
+
+Folders
+	os, android -> para elemntos especificos
+	lib -> El codgo compartido de dart para ambos
+
+pubspec -> Archivo de configuracion
+
+
+
+----
+
+Imperativa vs Declarativo -> Nuevo para Flutter
+Obb					
+Estructurada
+C
+
+
+---
+
+Main -> Metodo de inicio | punto de inicio
+		Sintaxis de Lambda
+		
+Flutter
+		All is a Widget
+		Build comes from widget 
+		MaterialApp( ... ) -> Toma todos los elementos de Material design y los usa -> El cascaron
+			Title -> Task mananger
+			Home -> La parte funcional
+		
+		Scaffold
+			La estrctura de la app
+			
+			appBar
+			Body
+			bottomNavigationBar
+			floatingActionButton
+			floatingActionButtonLocation
+			
+-----
+
+Widgets Basicos
+	Text
+	Row
+	Column
+	Stack
+	Container
