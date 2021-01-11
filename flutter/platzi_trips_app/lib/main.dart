@@ -1,40 +1,47 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
+import 'review_list.dart';
+import 'header_app_bar.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  String info =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu posuere sem. Nulla aliquet, odio et rhoncus efficitur, nulla justo posuere erat, at molestie libero felis at purus. Proin tempor turpis nec sapien tempor malesuada. Mauris semper libero eget tortor aliquam, vel consequat nulla commodo.";
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hola mundo"),
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        body: Center(
-          child: Text("Hola mundo Platzi"),
-        ),
-      ),
-    );
+        home: Scaffold(
+          body: Stack(
+            children: [
+              ListView(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(
+                      top: 323.0,
+                      right: 3.0,
+                    ),
+                    child: SizedBox(
+                      height: 1,
+                    ),
+                  ),
+                  DescriptionPlace("Pat", 1.5, info),
+                  ReviewList()
+                ],
+              ),
+              HeaderAppBar()
+            ],
+          ),
+        ));
   }
 }
 
