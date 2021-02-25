@@ -1,5 +1,5 @@
 /// Created by Juan Gonzalo Quiroz Cadavid
-/// JuanGQCadavid at Github
+/// JuanGQCadavid at Github - 2021
 
 import 'package:flutter/material.dart';
 import 'utils/stars_review.dart';

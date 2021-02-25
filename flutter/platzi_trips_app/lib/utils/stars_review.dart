@@ -13,14 +13,14 @@ class StartsReview extends StatelessWidget {
   Widget build(BuildContext context) {
 
     List<Widget> starList = [];
-    double remaining_starts;
+    double remainingStarts;
 
     for ( var iterator = 0 ; iterator < 5; iterator++) {
-      remaining_starts = stars - iterator ;
-      if (remaining_starts > 1){
+      remainingStarts = stars - iterator ;
+      if (remainingStarts > 1){
         starList.add(_Star(StartsState.full, iconSize:iconSize));
       }
-      else if ((remaining_starts < 1) & ( remaining_starts> 0)){
+      else if ((remainingStarts < 1) & ( remainingStarts> 0)){
         starList.add(_Star(StartsState.half, iconSize:iconSize));
       }
       else{
