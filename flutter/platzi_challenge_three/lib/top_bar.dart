@@ -4,137 +4,63 @@ import 'theme/colors.dart';
 class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        CustomPaint(
+    return CustomPaint(
         child: Container(
-        height: 200.0,
+        height: 250.0,
         ),
-        painter: CurvePainter(),
-        ),
-        Text(
-          "Hola"
-        )
-      ],
+        painter: RPSCustomPainter(),
     );
   }
 }
 
-class CurvePainter extends CustomPainter {
+class RPSCustomPainter extends CustomPainter{
+
   @override
   void paint(Canvas canvas, Size size) {
 
-    //Paint paint = Paint();
-
-/*    Path path = Path();
-    path.lineTo(0, size.height * 0.75);
-    path.quadraticBezierTo(size.width * 0.4 ,size.height *0.4, size.width * 0.75, size.height* 0.80);
-    path.quadraticBezierTo(size.width * 0.90 ,size.height *0.95, size.width , size.height* 0.95);
-    path.lineTo(size.width, 0);*/
-
-/*    Path path = Path();
-    path.lineTo(0, size.height * 0.60);
-    path.quadraticBezierTo(size.width * 0.25 ,size.height *0.65, size.width * 0.45, size.height* 0.30);
-    path.quadraticBezierTo(size.width * 0.60 ,size.height *0.60, size.width * 0.80, size.height* 0.75);
-    path.quadraticBezierTo(size.width * 0.80 ,size.height *0.45, size.width , size.height* 0.41);
-    path.lineTo(size.width, 0);*/
-
-/*    Path path = Path();
-    path.lineTo(0, size.height * 0.60);
-    path.quadraticBezierTo(size.width * 0.25 ,size.height *0.65, size.width * 0.36, size.height* 0.44);
-    path.quadraticBezierTo(size.width * 0.50 ,size.height *0.20, size.width * 0.71, size.height* 0.60);
-    path.quadraticBezierTo(size.width * 0.87 ,size.height *0.90, size.width , size.height* 0.70);
-    path.lineTo(size.width, 0);*/
-
-/*    Path path = Path();
-    path.lineTo(0, size.height * 0.60);
-    path.quadraticBezierTo(size.width * 0.22 ,size.height *0.63, size.width * 0.40, size.height* 0.40);
-    path.quadraticBezierTo(size.width * 0.57 ,size.height *0.18, size.width * 0.71, size.height* 0.44);
-    path.quadraticBezierTo(size.width * 0.90 ,size.height *0.70, size.width , size.height* 0.41);
-    path.lineTo(size.width, 0);*/
-
-/*    double upper = 0.40;
-    double lower = 0.60;
-
-    Path path = Path();
-    path.lineTo(0, size.height * 0.60);
-    path.quadraticBezierTo(size.width * 0.175 ,size.height * upper, size.width * 0.35, size.height * lower);
-    path.quadraticBezierTo(size.width * 0.50 ,size.height * 0.75, size.width * 0.65, size.height* lower);
-    path.quadraticBezierTo(size.width * 0.825 ,size.height * upper, size.width , size.height * lower);
-    path.lineTo(size.width, 0);*/
-
-  /*  Path path = Path();
-    path.lineTo(0, size.height * 0.51);
-    path.quadraticBezierTo(size.width * 0.22 ,size.height *0.48, size.width * 0.33, size.height* 0.54);
-    path.quadraticBezierTo(size.width * 0.50 ,size.height *0.65, size.width * 0.67, size.height* 0.54);
-    path.quadraticBezierTo(size.width * 0.78 ,size.height *0.48, size.width , size.height* 0.54);
-    path.lineTo(size.width, 0);
+    Paint paint_1 = new Paint()
+      ..color = Color.fromARGB(100, 100, 100, 243)
+      ..style = PaintingStyle.fill
+      ..strokeWidth = 1.0;
 
 
-*//*    path.addPolygon([
-      Offset(0, 0),
-      Offset(size.width ,0),
-      Offset(size.width ,size.height),
-      Offset(0, size.height)
-    ], true);*//*
+    Path path_1 = Path();
+    path_1.moveTo(size.width*0.0010875,size.height*0.8614400);
+    path_1.quadraticBezierTo(size.width*0.0811875,size.height*0.9634800,size.width*0.1691000,size.height*0.9443800);
+    path_1.quadraticBezierTo(size.width*0.3041375,size.height*0.9307200,size.width*0.4986250,size.height*0.7864200);
+    path_1.lineTo(size.width*0.6500000,size.height*0.7420000);
+    path_1.lineTo(size.width,size.height*0.7423400);
+    path_1.lineTo(size.width,size.height*0.3473200);
+    path_1.lineTo(size.width*0.0004750,size.height*0.3483400);
+    path_1.lineTo(size.width*0.0010875,size.height*0.8614400);
+    path_1.close();
+
+    canvas.drawPath(path_1, paint_1);
+
+    Paint paint_0 = new Paint()
+      ..color = Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.fill
+      ..strokeWidth = 1.0;
 
 
+    Path path_0 = Path();
+    path_0.moveTo(0,size.height*0.7760000);
+    path_0.quadraticBezierTo(size.width*0.0550000,size.height*0.6920000,size.width*0.2087500,size.height*0.6810000);
+    path_0.quadraticBezierTo(size.width*0.3425000,size.height*0.6890000,size.width*0.4965500,size.height*0.7970000);
+    path_0.quadraticBezierTo(size.width*0.6526750,size.height*0.9181600,size.width*0.7875000,size.height*0.9190000);
+    path_0.quadraticBezierTo(size.width*0.9340625,size.height*0.9130000,size.width,size.height*0.7810000);
+    path_0.lineTo(size.width,0);
+    path_0.lineTo(0,0);
+    path_0.lineTo(size.width*0.0009750,size.height*0.7747800);
 
-    path.close();
+    canvas.drawPath(path_0, paint_0);
 
-    paint.color = colorThree;
-    canvas.drawPath(path, paint);*/
-
-
-
-    Path path = Path();
-    Paint paint = Paint();
-
-
-    path.lineTo(0, size.height *0.75);
-    path.quadraticBezierTo(size.width* 0.10, size.height*0.70,   size.width*0.17, size.height*0.90);
-    path.quadraticBezierTo(size.width*0.20, size.height, size.width*0.25, size.height*0.90);
-    path.quadraticBezierTo(size.width*0.40, size.height*0.40, size.width*0.50, size.height*0.70);
-    path.quadraticBezierTo(size.width*0.60, size.height*0.85, size.width*0.65, size.height*0.65);
-    path.quadraticBezierTo(size.width*0.70, size.height*0.90, size.width, 0);
-    path.close();
-
-    paint.color = colorThree;
-    canvas.drawPath(path, paint);
-
-
-    path = Path();
-    path.lineTo(0, size.height*0.50);
-    path.quadraticBezierTo(size.width*0.10, size.height*0.80, size.width*0.15, size.height*0.60);
-    path.quadraticBezierTo(size.width*0.20, size.height*0.45, size.width*0.27, size.height*0.60);
-    path.quadraticBezierTo(size.width*0.45, size.height, size.width*0.50, size.height*0.80);
-    path.quadraticBezierTo(size.width*0.55, size.height*0.45, size.width*0.75, size.height*0.75);
-    path.quadraticBezierTo(size.width*0.85, size.height*0.93, size.width, size.height*0.60);
-    path.lineTo(size.width, 0);
-    path.close();
-
-    paint.color = colorTwo;
-    canvas.drawPath(path, paint);
-
-
-
-    path =Path();
-    path.lineTo(0, size.height*0.75);
-    path.quadraticBezierTo(size.width*0.10, size.height*0.55, size.width*0.22, size.height*0.70);
-    path.quadraticBezierTo(size.width*0.30, size.height*0.90, size.width*0.40, size.height*0.75);
-    path.quadraticBezierTo(size.width*0.52, size.height*0.50, size.width*0.65, size.height*0.70);
-    path.quadraticBezierTo(size.width*0.75, size.height*0.85, size.width, size.height*0.60);
-    path.lineTo(size.width, 0);
-    path.close();
-
-    paint.color = colorOne;
-    canvas.drawPath(path, paint);
   }
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return oldDelegate != this;
   }
-  
+
 }
+

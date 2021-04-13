@@ -33,11 +33,43 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: Stack(
         //margin: EdgeInsets.only(top: 25.0),
-        child: TopBar(),
+        children: [
+          TopBar(),
+
+          _Title(),
+        ],
       ),
     );
   }
 }
+
+class _Title extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top:30),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+/*
+          Icon(Icons.arrow_back),
+          Center(child: Text("HI"),)
+*/
+
+/*          Expanded(
+            flex: 5,
+              child: Icon(Icons.arrow_back)
+          ),
+          Expanded(
+              flex: 1,
+              child: Text("HI")),*/
+        ],
+
+      ),
+    );
+  }
+}
+
 
