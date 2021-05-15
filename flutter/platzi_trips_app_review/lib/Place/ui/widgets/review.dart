@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app_review/widgets/stars/stars_review.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/widgets/stars_review.dart';
 
 class Review extends StatelessWidget {
   final String person_url;

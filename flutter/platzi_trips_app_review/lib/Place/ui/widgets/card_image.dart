@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'fab_card.dart';
+import '../../../widgets/fab_card.dart';
 
 class CardImage extends StatelessWidget {
 
@@ -19,6 +19,7 @@ class CardImage extends StatelessWidget {
     );
   }
 }
+
 
 class _Image extends StatelessWidget {
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/trips/platzi_trips.dart';
+import 'platzi_trips.dart';
 
 void main() {
   runApp(MyApp());

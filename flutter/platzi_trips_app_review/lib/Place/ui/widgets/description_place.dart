@@ -2,8 +2,8 @@
 /// JuanGQCadavid at Github - 2021
 
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app_review/widgets/body/buttom_purple.dart';
-import 'package:platzi_trips_app_review/widgets/stars/stars_review.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/widgets/buttom_purple.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/widgets/stars_review.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String namePlace;

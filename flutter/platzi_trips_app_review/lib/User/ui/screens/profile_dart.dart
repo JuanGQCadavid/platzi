@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app_review/widgets/appBar/profile_app_bar.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/User/ui/screens/profile_app_bar.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override

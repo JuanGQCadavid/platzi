@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app_review/widgets/appBar/header_app_bar.dart';
-import 'package:platzi_trips_app_review/widgets/body/description_place.dart';
-import 'package:platzi_trips_app_review/widgets/body/review_list.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/Place/ui/screens/header_app_bar.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/Place/ui/widgets/description_place.dart';
+import 'file:///C:/Users/jquir/platzi/flutter/platzi_trips_app_review/lib/Place/ui/widgets/review_list.dart';
 
 
 class HomeTrips extends StatelessWidget {
